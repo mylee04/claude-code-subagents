@@ -253,6 +253,14 @@ I'm assembling a specialized crew of AI agents...
 
 These agents are now available for use with slash commands like `/react-typescript-specialist`.
 
+### 📸 See It In Action
+
+![Agent Assembler in Action](docs/images/example.png)
+*The agent-assembler analyzes your project and creates specialized agents*
+
+![Complete Agent Crew Output](docs/images/example2.png)
+*Your complete AI development crew ready to use with slash commands*
+
 ### Example 2: Planning a Complex Feature
 ```
 /feature-planner Implement real-time collaboration feature
