@@ -1,0 +1,54 @@
+# Jekyll configuration for GitHub Pages
+title: Claude Code Agent Collection
+description: A comprehensive collection of AI agents for Claude Code that work together as your personalized development team
+theme: jekyll-theme-minimal
+show_downloads: true
+
+# GitHub repository information
+github:
+  repository_name: claude-code-agents
+  repository_url: https://github.com/mylee04/claude-code-agents
+
+# Navigation
+navigation:
+  - title: Home
+    url: /
+  - title: Agents
+    url: /agents/
+  - title: Documentation
+    url: /docs/
+  - title: Contributing
+    url: /contributing/
+
+# Exclude files from build
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - infrastructure/
+  - development/
+  - architecture/
+  - data/
+  - domain/
+  - operations/
+  - programming_specialists/
+  - quality/
+  - security/
+  - ai/
+
+# Markdown processing
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    css_class: 'highlight'
+
+# Plugins
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
