@@ -83,13 +83,19 @@ Core development agents for building features.
 | [`backend-architect`](agents/development/backend-architect.md) | Designs APIs, services, and database schemas |
 | [`frontend-developer`](agents/development/frontend-developer.md) | Builds modern UI components and manages state |
 
-### ✅ Quality & Security
-Agents focused on code quality, testing, and security.
+### ✅ Quality Assurance
+Agents focused on code quality and testing.
 
 | Agent | Description |
 |-------|-------------|
 | [`code-reviewer`](agents/quality/code-reviewer.md) | Reviews code for quality and best practices |
 | [`test-engineer`](agents/quality/test-engineer.md) | Writes comprehensive automated tests |
+
+### 🔒 Security
+Security-focused agents for vulnerability detection and compliance.
+
+| Agent | Description |
+|-------|-------------|
 | [`security-auditor`](agents/security/security-auditor.md) | Scans for vulnerabilities and security issues |
 
 ### 🏗️ Infrastructure & Operations
