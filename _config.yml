@@ -29,16 +29,9 @@ exclude:
   - vendor/cache/
   - vendor/gems/
   - vendor/ruby/
-  - infrastructure/
-  - development/
-  - architecture/
-  - data/
-  - domain/
-  - operations/
-  - programming_specialists/
-  - quality/
-  - security/
-  - ai/
+  - .venv/
+  - __pycache__/
+  - *.pyc
 
 # Markdown processing
 markdown: kramdown
