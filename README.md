@@ -12,10 +12,15 @@ The Claude Code Agent Collection is a curated set of specialized AI agents desig
 
 ### ✨ Key Features
 
-- **🎯 Dynamic Team Assembly**: The `agent-assembler` reads your project's `claude.md` file and automatically builds a custom crew
-- **🤝 Collaborative Agents**: "Lead" agents coordinate multiple specialists to handle complex tasks
+- **🎯 Dynamic Team Assembly**: The `agent-assembler` reads your project's `claude.md` file and generates new custom agents tailored to your tech stack
+- **🤝 Agent Orchestration**: The `feature-planner` and other conductor agents coordinate existing specialists to handle complex tasks
 - **📁 Organized by Domain**: Agents are categorized for easy discovery and use
 - **🔧 Extensible**: Easy to add new agents or customize existing ones
+
+### 🎼 Two Types of Conductor Agents
+
+1. **Agent Creators** (e.g., `agent-assembler`): Generate new agent files customized for your specific project needs
+2. **Agent Orchestrators** (e.g., `feature-planner`): Coordinate existing agents to work together on complex tasks
 
 ## 📚 Table of Contents
 
@@ -72,8 +77,8 @@ Agents that coordinate other agents and manage complex workflows.
 
 | Agent | Description |
 |-------|-------------|
-| [`agent-assembler`](agents/conductor/agent-assembler.md) | Analyzes your project and builds a custom agent crew |
-| [`feature-planner`](agents/conductor/feature-planner.md) | Tech lead that creates comprehensive technical plans |
+| [`agent-assembler`](agents/conductor/agent-assembler.md) | Generates new custom agents based on your project's tech stack |
+| [`feature-planner`](agents/conductor/feature-planner.md) | Coordinates existing agents to create technical plans |
 
 ### 💻 Development & Architecture
 Core development agents for building features.
@@ -129,24 +134,26 @@ Agents focused on product development and specialized tasks.
 
 ## 🔧 How It Works
 
-### 1. Project Analysis
-The `agent-assembler` reads your `claude.md` file to understand:
-- Your technology stack
-- Project architecture
-- Development conventions
-- Team goals and priorities
+### 1. Initial Setup - Agent Generation
+The `agent-assembler` reads your `claude.md` file and:
+- Analyzes your technology stack and project needs
+- Generates new custom agent files specific to your project
+- Places them in your `~/.claude/agents/` directory
+- Creates agents like `react-specialist` or `postgres-expert` based on your stack
 
-### 2. Custom Crew Assembly
-Based on the analysis, it:
-- Selects relevant agents from the collection
-- Creates new specialized agents if needed
-- Configures agents with project-specific context
+### 2. Task Execution - Agent Orchestration
+When you need to accomplish complex tasks:
+- Use conductor agents like `feature-planner` to coordinate work
+- The conductor invokes relevant specialist agents
+- Each specialist handles their domain (backend, frontend, security, etc.)
+- Results are synthesized into a cohesive solution
 
-### 3. Collaborative Execution
-Agents work together:
-- Lead agents coordinate specialists
-- Information flows between agents seamlessly
-- Complex tasks are broken down and distributed
+### 3. Collaborative Workflow
+The two-layer system ensures:
+- You have the right agents for your specific project (via generation)
+- Those agents work together effectively (via orchestration)
+- Complex tasks are broken down and distributed properly
+- No duplicate effort or gaps in coverage
 
 ## 💡 Usage Examples
 
