@@ -25,9 +25,11 @@ The Claude Code Agent Collection is a curated set of specialized AI agents desig
 ## 📚 Table of Contents
 
 - [Getting Started](#-getting-started)
+- [How to Use the Agents](#-how-to-use-the-agents)
 - [Agent Categories](#-agent-categories)
 - [How It Works](#-how-it-works)
 - [Usage Examples](#-usage-examples)
+- [Troubleshooting](#-troubleshooting)
 - [Contributing](#-contributing)
 - [Philosophy](#-philosophy)
 
@@ -46,8 +48,12 @@ The Claude Code Agent Collection is a curated set of specialized AI agents desig
    cd claude-code-agents
    ```
 
-2. **Copy agents to your Claude Code directory**:
+2. **Install the agents**:
    ```bash
+   # Create Claude's agent directory if it doesn't exist
+   mkdir -p ~/.claude/agents
+   
+   # Copy all agents to Claude Code
    cp -r agents/* ~/.claude/agents/
    ```
 
@@ -65,10 +71,65 @@ The Claude Code Agent Collection is a curated set of specialized AI agents desig
    - Maintain high code quality and test coverage
    ```
 
-4. **Invoke the agent-assembler**:
+### 📖 How to Use the Agents
+
+#### Method 1: Using Slash Commands (Recommended)
+Once agents are installed in `~/.claude/agents/`, you can use them with slash commands:
+
+```bash
+# Generate custom agents for your project
+/agent-assembler
+
+# Plan a complex feature
+/feature-planner Implement real-time metrics dashboard
+
+# Use specific agents directly
+/backend-architect Design the database schema for datasets
+/frontend-developer Create the user dashboard component
+/security-auditor Review authentication implementation
+```
+
+#### Method 2: Using Natural Language
+If slash commands aren't working, you can invoke agents naturally:
+
+```
+Use the agent-assembler to analyze my claude.md and create custom agents
+```
+
+#### Method 3: Using the Task Tool
+For more complex operations:
+
+```
+Use the feature-planner agent to design a user authentication system
+```
+
+### 🎯 Typical Workflow
+
+1. **First, generate project-specific agents**:
    ```
-   Use the agent-assembler to build a crew for this project
+   /agent-assembler
    ```
+   This reads your `claude.md` and creates custom agents like `react-specialist` or `postgres-expert`
+
+2. **Then, use conductor agents for complex tasks**:
+   ```
+   /feature-planner Build a real-time chat feature
+   ```
+
+3. **Or use specialist agents directly**:
+   ```
+   /database-optimizer Analyze and improve query performance
+   ```
+
+### ✅ What Happens Next?
+
+After running `/agent-assembler`, you'll have:
+- Custom agents created specifically for your tech stack (e.g., `react-typescript-specialist`, `supabase-backend-specialist`)
+- All base agents from this collection available for use
+- The ability to use slash commands to invoke any agent
+- A fully assembled AI development team ready to help
+
+💡 **Pro tip**: Run `/agent-assembler` first in any new project to get agents tailored to your specific technology choices!
 
 ## 📋 Agent Categories
 
@@ -157,25 +218,57 @@ The two-layer system ensures:
 
 ## 💡 Usage Examples
 
-### Example 1: Planning a New Feature
+### Example 1: Generate Custom Agents for Your Project
+When you run `/agent-assembler`, it analyzes your `claude.md` and creates project-specific agents:
+
 ```
-Use the feature-planner to design a user authentication system
+/agent-assembler
+```
+
+**Real Output Example:**
+```
+🎯 Mission Analysis Complete: Your AI SaaS Platform
+
+Based on your project's technology stack and requirements,
+I'm assembling a specialized crew of AI agents...
+
+✓ Created: react-typescript-specialist.md
+  Expert in React 18, TypeScript, and Vite for building performant, 
+  type-safe UI components
+
+✓ Created: supabase-backend-specialist.md
+  Supabase expert specializing in PostgreSQL, RLS policies, 
+  real-time subscriptions
+
+✓ Created: tailwind-ui-designer.md
+  Tailwind CSS v3 expert focused on creating beautiful, 
+  responsive UI
+
+✓ Created: vitest-testing-expert.md
+  Testing specialist ensuring 80%+ coverage
+
+✓ Created: vercel-deployment-engineer.md
+  Deployment expert handling CI/CD and performance optimization
+```
+
+These agents are now available for use with slash commands like `/react-typescript-specialist`.
+
+### Example 2: Planning a Complex Feature
+```
+/feature-planner Implement real-time collaboration feature
 ```
 
 The feature-planner will:
-1. Coordinate with `backend-architect` for API design
+1. Coordinate with `backend-architect` for WebSocket design
 2. Consult `frontend-developer` for UI components
-3. Include `security-auditor` for security considerations
-4. Engage `test-engineer` for testing strategy
+3. Include `security-auditor` for data privacy considerations
+4. Engage `test-engineer` for real-time testing strategy
 
-### Example 2: Code Review Workflow
+### Example 3: Direct Agent Usage
 ```
-Use the code-reviewer to review the changes in my pull request
-```
-
-### Example 3: Security Audit
-```
-Use the security-auditor to scan the codebase for vulnerabilities
+/backend-architect Design a microservices architecture
+/security-auditor Review our OAuth implementation
+/database-optimizer Analyze slow queries in production
 ```
 
 ## 🤝 Contributing
@@ -201,6 +294,36 @@ We welcome contributions! Here's how you can help:
    ```
 
 3. Submit a pull request with your agent
+
+## 🔧 Troubleshooting
+
+### Slash commands not working?
+1. **Verify installation**:
+   ```bash
+   ls ~/.claude/agents/
+   ```
+   You should see all the agent `.md` files
+
+2. **Check agent format**:
+   - Ensure agents have proper frontmatter with `name:` and `description:`
+   - Agent names should match the slash command exactly
+
+3. **Alternative invocation methods**:
+   - Natural language: "Use the agent-assembler to..."
+   - Task tool: Select the Task tool and specify the agent
+   - Direct reference: "@agent-assembler please..."
+
+### Common Issues
+
+**"Directory does not exist" error**:
+```bash
+mkdir -p ~/.claude/agents
+```
+
+**"Agent not found" error**:
+- Verify the agent name matches exactly (case-sensitive)
+- Check that the agent file exists in `~/.claude/agents/`
+- Try reinstalling: `cp agents/conductor/agent-assembler.md ~/.claude/agents/`
 
 ## 💭 Philosophy
 
