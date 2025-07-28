@@ -120,6 +120,72 @@ These are custom agents created for specific projects:
 
 💡 **Important**: Agents created by copying files directly to `~/.claude/agents/` won't work with the Task tool. Always use the `/agents` command to properly register project-specific agents.
 
+## 🎨 Visual Agent Indicators
+
+Claude Code uses visual cues to show agent status:
+
+### ✅ Properly Registered Agents
+![Registered agent with colored background](docs/images/registered-agent-colored.png)
+- **Colored background badges** (orange, blue, etc.)
+- Work with both slash commands and Task tool
+- Show in `/agents` command list
+- Can be organized into "Personal" or "Project" sections
+
+### ❌ File-Based Agents (Not Registered)
+![File-based agents without colors](docs/images/file-based-agents.png)
+- **Blue arrow icons** without colored backgrounds
+- Only work with direct slash commands
+- Don't appear in `/agents` command list
+- Won't work with Task tool
+
+### 📁 Project Agents Location
+Project agents can be stored in `.claude/agents/` within your project directory. To make them show in the "Project agents" section with proper colors:
+
+1. Navigate to your project directory
+2. Use `/agents` → Create new agent
+3. The agent will be registered and show under "Project agents"
+4. You'll see the colored background indicating proper registration
+
+## 🔑 CRITICAL: Agent File Format Requirement
+
+**BREAKTHROUGH DISCOVERY!** Agents MUST have YAML frontmatter to be recognized by Claude Code!
+
+### ✅ Correct Format (Works with /agents)
+```markdown
+---
+name: your-agent-name
+description: Brief description of what this agent does
+color: blue  # optional: blue, green, yellow, red, purple, cyan, orange
+---
+
+You are the Agent Name, a specialist in...
+```
+
+### ❌ Incorrect Format (Won't be recognized)
+```markdown
+# Your Agent Name
+
+You are a specialist in...
+```
+
+Without the YAML frontmatter:
+- ❌ Agent won't appear in `/agents` command
+- ❌ Can't be used with Task tool
+- ❌ Won't have colored background badge
+- ❌ Not properly registered with Claude Code
+
+**The Fix**: Simply add the YAML frontmatter to any `.md` file in `.claude/agents/` and it will automatically appear in the `/agents` list!
+
+### 📸 Visual Proof
+
+**Before**: Agents without YAML frontmatter (not recognized)
+![Agents not showing in /agents command](docs/images/agents-not-recognized.png)
+
+**After**: Same agents with YAML frontmatter added
+![All agents now showing in /agents command](docs/images/agents-recognized.png)
+
+Notice how all 6 claude-arena agents now appear in the "Project agents" section!
+
 ### 📖 How to Use the Agents
 
 #### Method 1: Using Slash Commands (Recommended)
@@ -188,6 +254,27 @@ To use your generated agents:
 # 3. Now use your custom agents!
 /react-typescript-specialist Build a data dashboard
 ```
+
+### 🏷️ Registering Project-Specific Agents
+
+For agents to appear in the "Project agents" section with proper colors:
+
+1. **Create project agents directory** (optional):
+   ```bash
+   mkdir -p .claude/agents
+   ```
+
+2. **Register via /agents command**:
+   - When in your project directory, use `/agents`
+   - Create new agent
+   - The agent will automatically be categorized as a "Project agent"
+   - You'll see the colored background badge
+
+3. **Result**:
+   - Agent shows under "Project agents (.claude/agents)"
+   - Has colored background (orange, blue, etc.)
+   - Works with Task tool
+   - Only available when in that project
 
 💡 **Pro tip**: The agent-assembler creates agents tailored to YOUR project's specific tech stack, coding standards, and goals from your `claude.md` file!
 
@@ -371,17 +458,24 @@ We welcome contributions! Here's how you can help:
 ### Creating a New Agent
 
 1. Choose the appropriate category folder
-2. Create a markdown file with frontmatter:
+2. Create a markdown file with **REQUIRED YAML frontmatter**:
    ```markdown
    ---
    name: your-agent-name
    description: Brief description of what this agent does
+   color: blue  # optional: blue, green, yellow, red, purple, cyan, orange
    ---
    
    You are the "Agent Name," a specialist in...
    ```
 
-3. Submit a pull request with your agent
+3. **CRITICAL**: The YAML frontmatter is REQUIRED for:
+   - Agent to appear in `/agents` command
+   - Working with Task tool
+   - Getting colored background badge
+   - Proper Claude Code integration
+
+4. Submit a pull request with your agent
 
 ## 🔧 Troubleshooting
 
@@ -416,6 +510,26 @@ We welcome contributions! Here's how you can help:
 - Only registered agents work with the Task tool
 - Global agents from this repo work via direct slash commands
 
+### Agents in `.claude/agents/` Not Showing in `/agents` Command?
+
+**Problem**: You have `.md` files in `.claude/agents/` but they don't appear when you type `/agents`
+
+**Solution**: Check the YAML frontmatter!
+```bash
+# Check if your agent has the required frontmatter
+head -n 5 ~/.claude/agents/your-agent.md
+```
+
+If it's missing the YAML frontmatter:
+```yaml
+---
+name: agent-name
+description: Agent description
+---
+```
+
+Add it to the top of the file, and the agent will immediately appear in `/agents`!
+
 ### Common Issues
 
 **"Directory does not exist" error**:
@@ -424,9 +538,10 @@ mkdir -p ~/.claude/agents
 ```
 
 **"Agent not found" error**:
-- For slash commands: Verify the agent file exists in `~/.claude/agents/`
-- For Task tool: Ensure agent is registered via `/agents` command
-- Try reinstalling: `cp agents/conductor/agent-assembler.md ~/.claude/agents/`
+- Check YAML frontmatter format is correct
+- Verify the agent file exists in `~/.claude/agents/` or `.claude/agents/`
+- For Task tool: Ensure agent has proper YAML frontmatter
+- Agent name in frontmatter must match the slash command exactly
 
 ## 💭 Philosophy
 
