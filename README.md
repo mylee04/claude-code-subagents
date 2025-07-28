@@ -2,9 +2,9 @@
 
 > A comprehensive collection of AI agents for Claude Code that work together as your personalized development team
 
-[![Claude Code](https://img.shields.io/badge/Claude%20Code-Agent%20Collection-blue)](https://github.com/anthropics/claude-code)
+[![Claude Code](https://img.shields.io/badge/Claude%20Code-Subagents%20Collection-blue)](https://github.com/anthropics/claude-code)
 [![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
-[![Agents](https://img.shields.io/badge/agents-17-orange)](agents/)
+[![Agents](https://img.shields.io/badge/agents-18-orange)](agents/)
 
 ## 🚀 Overview
 
@@ -44,11 +44,18 @@ The Claude Code Agent Collection is a curated set of specialized AI agents desig
 
 1. **Clone this repository**:
    ```bash
-   git clone https://github.com/mylee04/claude-code-agents.git
-   cd claude-code-agents
+   git clone https://github.com/mylee04/claude-code-subagents.git
+   cd claude-code-subagents
    ```
 
 2. **Install the agents**:
+   ```bash
+   # Run the installation script
+   chmod +x install.sh
+   ./install.sh
+   ```
+   
+   Or manually:
    ```bash
    # Create Claude's agent directory if it doesn't exist
    mkdir -p ~/.claude/agents
@@ -148,6 +155,7 @@ Core development agents for building features.
 |-------|-------------|
 | [`backend-architect`](agents/development/backend-architect.md) | Designs APIs, services, and database schemas |
 | [`frontend-developer`](agents/development/frontend-developer.md) | Builds modern UI components and manages state |
+| [`git-specialist`](agents/development/git-specialist.md) | Git expert for professional commit management (never commits without permission) |
 
 ### ✅ Quality Assurance
 Agents focused on code quality and testing.
@@ -277,6 +285,7 @@ The feature-planner will:
 /backend-architect Design a microservices architecture
 /security-auditor Review our OAuth implementation
 /database-optimizer Analyze slow queries in production
+/git-specialist Review staged changes and propose commit message
 ```
 
 ## 🤝 Contributing

@@ -65,8 +65,8 @@ You are the "[Agent Name]," a [role description] on this AI crew. [Expanded desc
 
 1. **Fork the Repository**
    ```bash
-   git clone https://github.com/mylee04/claude-code-agents.git
-   cd claude-code-agents
+   git clone https://github.com/mylee04/claude-code-subagents.git
+   cd claude-code-subagents
    ```
 
 2. **Create a Feature Branch**

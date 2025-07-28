@@ -30,7 +30,7 @@ Unlike static tool collections, our agents form a **dynamic development team** t
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/mylee04/claude-code-agents.git
+git clone https://github.com/mylee04/claude-code-subagents.git
 
 # 2. Copy agents to Claude Code
 cp -r agents/* ~/.claude/agents/
@@ -67,7 +67,7 @@ echo "# My Project\n## Tech Stack: React, Node.js, PostgreSQL" > claude.md
 
 ## 🤝 Join the Community
 
-- Star us on [GitHub](https://github.com/mylee04/claude-code-agents)
+- Star us on [GitHub](https://github.com/mylee04/claude-code-subagents)
 - Report issues or request features
 - Share your custom agents
 - Join discussions about AI-assisted development

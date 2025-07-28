@@ -6,8 +6,8 @@ show_downloads: true
 
 # GitHub repository information
 github:
-  repository_name: claude-code-agents
-  repository_url: https://github.com/mylee04/claude-code-agents
+  repository_name: claude-code-subagents
+  repository_url: https://github.com/mylee04/claude-code-subagents
 
 # Navigation
 navigation:
