@@ -4,7 +4,7 @@
 
 [![Claude Code](https://img.shields.io/badge/Claude%20Code-Subagents%20Collection-blue)](https://github.com/anthropics/claude-code)
 [![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
-[![Agents](https://img.shields.io/badge/agents-18-orange)](agents/)
+[![Agents](https://img.shields.io/badge/agents-15-orange)](agents/)
 
 ## 🚀 Overview
 
@@ -301,7 +301,7 @@ Core development agents for building features.
 
 | Agent | Description |
 |-------|-------------|
-| [`backend-architect`](agents/development/backend-architect.md) | Designs APIs, services, and database schemas |
+| [`full-stack-architect`](agents/development/full-stack-architect.md) | Designs complete system architectures including backend, databases, and frontend |
 | [`frontend-developer`](agents/development/frontend-developer.md) | Builds modern UI components and manages state |
 | [`git-specialist`](agents/development/git-specialist.md) | Git expert for professional commit management (never commits without permission) |
 
@@ -310,8 +310,7 @@ Agents focused on code quality and testing.
 
 | Agent | Description |
 |-------|-------------|
-| [`code-reviewer`](agents/quality/code-reviewer.md) | Reviews code for quality and best practices |
-| [`test-engineer`](agents/quality/test-engineer.md) | Writes comprehensive automated tests |
+| [`quality-engineer`](agents/quality/quality-engineer.md) | Comprehensive quality specialist for testing, code review, and QA best practices |
 
 ### 🔒 Security
 Security-focused agents for vulnerability detection and compliance.
@@ -326,9 +325,7 @@ DevOps and infrastructure management agents.
 | Agent | Description |
 |-------|-------------|
 | [`cloud-architect`](agents/infrastructure/cloud-architect.md) | Designs cloud infrastructure on AWS, GCP, or Azure |
-| [`deployment-engineer`](agents/infrastructure/deployment-engineer.md) | Manages CI/CD pipelines and containerization |
-| [`database-optimizer`](agents/infrastructure/database-optimizer.md) | Optimizes database performance and queries |
-| [`devops-troubleshooter`](agents/infrastructure/devops-troubleshooter.md) | Debugs production issues using logs and metrics |
+| [`devops-engineer`](agents/infrastructure/devops-engineer.md) | Full-stack DevOps specialist for CI/CD, deployments, and troubleshooting |
 
 
 ### 📊 Data & AI
@@ -336,9 +333,7 @@ Agents for data science and AI/ML tasks.
 
 | Agent | Description |
 |-------|-------------|
-| [`data-engineer`](agents/data/data-engineer.md) | Builds data pipelines and ETL processes |
-| [`ai-engineer`](agents/data/ai-engineer.md) | Implements AI systems and LLM integrations |
-| [`ml-engineer`](agents/data/ml-engineer.md) | Deploys and manages ML models in production |
+| [`data-ai-ml-engineer`](agents/data/data-ai-ml-engineer.md) | Comprehensive specialist for data pipelines, AI systems, and ML operations |
 
 ### 🎯 Product & Specialized
 Agents focused on product development and specialized tasks.
@@ -423,16 +418,16 @@ These agents are now available for use with slash commands like `/react-typescri
 ```
 
 The feature-planner will:
-1. Coordinate with `backend-architect` for WebSocket design
+1. Coordinate with `full-stack-architect` for WebSocket design
 2. Consult `frontend-developer` for UI components
 3. Include `security-auditor` for data privacy considerations
-4. Engage `test-engineer` for real-time testing strategy
+4. Engage `quality-engineer` for real-time testing strategy
 
 ### Example 3: Direct Agent Usage
 ```
-/backend-architect Design a microservices architecture
+/full-stack-architect Design a microservices architecture
 /security-auditor Review our OAuth implementation
-/database-optimizer Analyze slow queries in production
+/devops-engineer Analyze slow queries in production
 /git-specialist Review staged changes and propose commit message
 ```
 
@@ -483,7 +478,31 @@ We welcome contributions! Here's how you can help:
    - Getting colored background badge
    - Proper Claude Code integration
 
-4. Submit a pull request with your agent
+4. **Make the agent visible in `/agents` command**:
+   ```bash
+   # After creating the agent file, run the install script
+   ./install.sh
+   
+   # This copies all agents to ~/.claude/agents/ where Claude Code can find them
+   ```
+
+5. Submit a pull request with your agent
+
+### 🎯 Quick Guide: Adding and Using New Agents
+
+When you add a new agent to this collection:
+
+1. **Create the agent file** in the appropriate category folder (e.g., `agents/product/your-new-agent.md`)
+2. **Include YAML frontmatter** at the top of the file
+3. **Run the install script** to make it visible:
+   ```bash
+   ./install.sh
+   ```
+4. **Verify in Claude Code**:
+   - Type `/agents` - your new agent should appear in the list
+   - Use it with a slash command: `/your-new-agent`
+
+The install script copies agents from this repository to `~/.claude/agents/`, which is where Claude Code looks for available agents.
 
 ## 🔧 Troubleshooting
 
