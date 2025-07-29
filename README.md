@@ -340,9 +340,10 @@ Agents focused on product development and specialized tasks.
 
 | Agent | Description |
 |-------|-------------|
-| [`user-feedback-analyst`](agents/product/user-feedback-analyst.md) | Analyzes user feedback to extract insights |
-| [`dx-optimizer`](agents/product/dx-optimizer.md) | Improves developer experience and workflows |
 | [`api-documenter`](agents/product/api-documenter.md) | Creates comprehensive API documentation |
+| [`dx-optimizer`](agents/product/dx-optimizer.md) | Improves developer experience and workflows |
+| [`tech-portfolio-resume-review-specialist`](agents/product/tech-portfolio-resume-review-specialist.md) | Reviews and optimizes tech portfolios and resumes |
+| [`user-feedback-analyst`](agents/product/user-feedback-analyst.md) | Analyzes user feedback to extract insights |
 
 ## 🔧 How It Works
 
