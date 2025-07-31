@@ -1,4 +1,4 @@
-# Claude Code Elite Squad
+# Claude Code SubAgents (Elite Squad)
 
 > **"Pokemon for Developers"** - Your AI agents level up, form teams, and tackle any coding challenge
 
