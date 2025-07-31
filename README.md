@@ -41,7 +41,7 @@ Watch agents level up, earn achievements like "Speed Demon" and "Bug Hunter", an
 /security-auditor review authentication flow
 
 # Complex multi-agent tasks
-/feature-planner Implement user dashboard with real-time data
+# Use Claude Code's built-in orchestration for complex workflows
 ```
 
 ## 🔍 Agent Discovery & Coordination System
@@ -100,7 +100,7 @@ python3 test_agent_registry.py
 ### Key Features
 
 - **Unified Discovery**: Finds agents from `/agents/`, `~/.claude/agents/`, and `.claude/agents/`
-- **Smart Coordination**: Feature-planner now discovers custom agents created by squad-commander
+- **Built-in Orchestration**: Claude Code handles agent coordination automatically
 - **Squad Formation**: Intelligently recommends 3-6 agents based on your project needs
 - **No External Dependencies**: Works with built-in Python libraries only
 
@@ -108,7 +108,7 @@ python3 test_agent_registry.py
 <summary><strong>📋 All 31 Agents (Click to expand)</strong></summary>
 
 ### Command & Planning
-- **feature-planner** - Orchestrates complex multi-agent workflows with smart agent discovery
+- Use Claude Code's built-in orchestration capabilities for multi-agent workflows
 
 ### Development
 - **python-pro** - Python/Django/FastAPI expert
@@ -186,8 +186,8 @@ python3 test_agent_registry.py
 The **Agent Registry System** automatically discovers and coordinates all available agents, including custom ones you create:
 
 ```bash
-# The feature-planner automatically finds the best agents for your project
-/feature-planner "Build a React TypeScript dashboard with real-time data"
+# Claude Code automatically coordinates agents based on your request
+"Build a React TypeScript dashboard with real-time data"
 # Automatically coordinates: react-specialist → typescript-pro → data-engineer → test-engineer
 ```
 
@@ -254,15 +254,15 @@ cp -r claude-code-subagents/agents/* ~/.claude/agents/
 ```bash
 # Feature Development
 "Implement user authentication with social login"
-# Coordinates: backend-architect → frontend-developer → security-auditor → test-engineer
+# Claude Code coordinates: backend-architect → frontend-developer → security-auditor → test-engineer
 
 # Performance Optimization  
 "Optimize application for 10x traffic increase"
-# Coordinates: performance-engineer → database-optimizer → cloud-architect → deployment-engineer
+# Claude Code coordinates: performance-engineer → database-optimizer → cloud-architect → deployment-engineer
 
 # Production Issues
 "Debug API timeout issues in production"  
-# Coordinates: devops-troubleshooter → performance-engineer → database-optimizer
+# Claude Code coordinates: devops-troubleshooter → performance-engineer → database-optimizer
 ```
 
 </details>
@@ -332,7 +332,7 @@ cp -r claude-code-subagents/agents/* ~/.claude/agents/
 
 1. **Install**: `cd ~/.claude && git clone https://github.com/mylee04/claude-code-subagents.git agents`
 2. **Try the demo**: `python3 gamification/scripts/squad-demo.py`
-3. **Plan a feature**: `/feature-planner "Build user authentication system"`
+3. **Plan a feature**: "Build user authentication system"
 4. **Use specific agents**: `/python-pro optimize this function`
 
 **First Mission Bonus**: Complete your first task and earn the "First Blood" achievement (+50 XP)
