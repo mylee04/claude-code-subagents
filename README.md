@@ -17,8 +17,8 @@ A **gamified collection of 31 specialized AI agents** that work together like a 
 ## Key Features
 
 - **31 Specialist Agents** - From Python experts to security auditors
-- **Gamification System** - Agents gain XP, level up (Recruit → Elite), earn achievements
-- **Project DNA Scanner** - Automatically generates custom agents for your tech stack
+- **Gamification System** - Agents gain XP, level up (Novice → Legend), earn achievements
+- **Smart Agent Registry** - Automatically discovers and coordinates all available agents
 - **Team Formations** - Agents work together with synergy bonuses
 - **Real Progress Tracking** - Watch your AI squad collaborate in real-time
 
@@ -35,9 +35,6 @@ Watch agents level up, earn achievements like "Speed Demon" and "Bug Hunter", an
 ## Basic Usage
 
 ```bash
-# Generate custom agents for your project
-/agent-assembler
-
 # Use specific agents
 /python-pro optimize this function
 /devops-troubleshooter analyze these logs
@@ -47,12 +44,71 @@ Watch agents level up, earn achievements like "Speed Demon" and "Bug Hunter", an
 /feature-planner Implement user dashboard with real-time data
 ```
 
+## 🔍 Agent Discovery & Coordination System
+
+The Elite Squad now features an advanced **AgentRegistry** that automatically discovers and coordinates agents from multiple locations:
+
+### Live Demo - See It In Action!
+
+```ansi
+🔍 AGENT DISCOVERY
+─────────────────
+✓ Successfully discovered 34 agents
+
+  ▸ Discovery Statistics
+  Total Agents Found....... 34
+  Categories Discovered.... 8
+  Tech Stacks Available.... 11
+
+📊 CATEGORY BREAKDOWN
+───────────────────────
+
+  Development         │████████████████████│ 10 agents
+  Infrastructure      │████████████        │  6 agents
+  Data & AI           │████████            │  4 agents
+  Quality Assurance   │████████            │  4 agents
+  Product             │████████            │  4 agents
+  Coordination        │██████              │  3 agents
+  Business            │████                │  2 agents
+  Security            │██                  │  1 agents
+
+🎯 FEATURE PLANNING & SQUAD RECOMMENDATION
+────────────────────────────────────────
+
+  ▸ Building E-Commerce Web Application
+  📝 Tech Stack: ["react", "typescript", "python", "postgresql"]
+  
+  ✓ Recommended Squad (6 agents):
+  • full-stack-architect - Complete system architecture design
+  • python-elite - Python/Django/FastAPI development
+  • frontend-developer - Modern UI components and frameworks
+  • database-optimizer - Database performance specialist
+  • devops-engineer - Full-stack DevOps specialist
+  • security-auditor - Security vulnerability scanner
+```
+
+### Run the Demo Yourself
+
+```bash
+# Run the colorful interactive demo
+python3 demo_agent_registry.py
+
+# Or try the simple test
+python3 test_agent_registry.py
+```
+
+### Key Features
+
+- **Unified Discovery**: Finds agents from `/agents/`, `~/.claude/agents/`, and `.claude/agents/`
+- **Smart Coordination**: Feature-planner now discovers custom agents created by squad-commander
+- **Squad Formation**: Intelligently recommends 3-6 agents based on your project needs
+- **No External Dependencies**: Works with built-in Python libraries only
+
 <details>
 <summary><strong>📋 All 31 Agents (Click to expand)</strong></summary>
 
 ### Command & Planning
-- **agent-assembler** - Generates custom agents for your tech stack
-- **feature-planner** - Orchestrates complex multi-agent workflows
+- **feature-planner** - Orchestrates complex multi-agent workflows with smart agent discovery
 
 ### Development
 - **python-pro** - Python/Django/FastAPI expert
@@ -101,12 +157,13 @@ Watch agents level up, earn achievements like "Speed Demon" and "Bug Hunter", an
 <details>
 <summary><strong>🎮 How the Gamification Works</strong></summary>
 
-### Agent Levels
-- **Lv.1 Recruit** (0-99 XP) - Learning your patterns
-- **Lv.2 Specialist** (100-299 XP) - Understanding project conventions
-- **Lv.3 Expert** (300-599 XP) - Anticipating your needs  
-- **Lv.4 Master** (600-999 XP) - Proactive recommendations
-- **Lv.5 Elite** (1000+ XP) - Legendary project insight
+### Agent Levels & Tiers
+- **🟢 Novice** (Lv.1-10) - Learning the basics, understanding your patterns
+- **🔵 Adept** (Lv.11-30) - Developing expertise, understanding project conventions
+- **🟡 Expert** (Lv.31-70) - Mastering techniques, anticipating your needs
+- **🟠 Master** (Lv.71-120) - Elite performance, proactive recommendations
+- **🔴 Grandmaster** (Lv.121-200) - Legendary status, deep project insight
+- **💎 Legend** (Lv.201+) - Ultimate mastery, transcendent capabilities
 
 ### Sample Achievements
 - 🩸 **First Blood** - Complete your first task (+50 XP)
@@ -124,33 +181,28 @@ Watch agents level up, earn achievements like "Speed Demon" and "Bug Hunter", an
 </details>
 
 <details>
-<summary><strong>🧬 Project DNA Scanner (Advanced)</strong></summary>
+<summary><strong>🤖 Smart Agent Registry (Advanced)</strong></summary>
 
-The **agent-assembler** analyzes your `claude.md` file and creates specialized agents for your exact tech stack:
+The **Agent Registry System** automatically discovers and coordinates all available agents, including custom ones you create:
 
 ```bash
-/agent-assembler
-# Scans your project → Creates custom agents like:
-# - react-typescript-specialist  
-# - supabase-backend-expert
-# - tailwind-ui-designer
+# The feature-planner automatically finds the best agents for your project
+/feature-planner "Build a React TypeScript dashboard with real-time data"
+# Automatically coordinates: react-specialist → typescript-pro → data-engineer → test-engineer
 ```
 
-**Why This Matters**: Instead of generic responses, you get agents that know your specific frameworks, coding standards, and architecture patterns.
+**Why This Matters**: No more manual coordination - the system intelligently selects agents based on:
+- Your project's tech stack
+- Agent expertise and performance history  
+- Task complexity and requirements
+- Agent availability and XP levels
 
-**Example Output**:
-```
-🎯 Mission Analysis Complete: Your AI SaaS Platform
-
-✓ Created: nextjs-app-router-specialist.md
-  Expert in Next.js 14, TypeScript, and Vite
-
-✓ Created: supabase-backend-specialist.md  
-  Supabase expert with RLS policies and real-time
-
-✓ Created: tailwind-ui-designer.md
-  Tailwind CSS v3 component architect
-```
+**Features**:
+- ✅ Automatic agent discovery from multiple locations
+- ✅ Tech stack analysis and matching
+- ✅ Performance-based recommendations
+- ✅ XP tracking integration
+- ✅ Smart squad formation
 
 </details>
 
@@ -280,8 +332,8 @@ cp -r claude-code-subagents/agents/* ~/.claude/agents/
 
 1. **Install**: `cd ~/.claude && git clone https://github.com/mylee04/claude-code-subagents.git agents`
 2. **Try the demo**: `python3 gamification/scripts/squad-demo.py`
-3. **Generate custom agents**: `/agent-assembler`
-4. **Start coding**: `/python-pro optimize this function`
+3. **Plan a feature**: `/feature-planner "Build user authentication system"`
+4. **Use specific agents**: `/python-pro optimize this function`
 
 **First Mission Bonus**: Complete your first task and earn the "First Blood" achievement (+50 XP)
 
