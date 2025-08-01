@@ -1,10 +1,10 @@
-# Claude Code SubAgents (Elite Squad)
+# Claude Code SubAgents
 
 > **"Pokemon for Developers"** - Your AI agents level up, form teams, and tackle any coding challenge
 
 **Quick Start**: `cd ~/.claude && git clone https://github.com/mylee04/claude-code-subagents.git agents` (10 seconds)
 
-[![Claude Code](https://img.shields.io/badge/Claude%20Code-Elite%20Squad-red)](https://github.com/anthropics/claude-code)
+[![Claude Code](https://img.shields.io/badge/Claude%20Code-SubAgents-red)](https://github.com/anthropics/claude-code)
 [![Agents](https://img.shields.io/badge/agents-31-orange)](agents/)
 [![XP System](https://img.shields.io/badge/XP%20System-Active-green)](GAMIFICATION-DESIGN.md)
 
@@ -12,7 +12,7 @@
 
 A **gamified collection of 31 specialized AI agents** that work together like a development team. Each agent levels up as you use them, unlocks achievements, and forms powerful combinations for complex tasks.
 
-**Core Value**: Instead of one generic AI assistant, you get a specialized squad where each agent is an expert in their domain (Python, DevOps, Security, etc.).
+**Core Value**: Instead of one generic AI assistant, you get a specialized team where each agent is an expert in their domain (Python, DevOps, Security, etc.).
 
 ## Key Features
 
@@ -20,14 +20,14 @@ A **gamified collection of 31 specialized AI agents** that work together like a 
 - **Gamification System** - Agents gain XP, level up (Novice → Legend), earn achievements
 - **Smart Agent Registry** - Automatically discovers and coordinates all available agents
 - **Team Formations** - Agents work together with synergy bonuses
-- **Real Progress Tracking** - Watch your AI squad collaborate in real-time
+- **Real Progress Tracking** - Watch your AI team collaborate in real-time
 
 ## Interactive Demo
 
 Try it now - see the XP system, achievements, and agent collaboration in action:
 
 ```bash
-cd ~/.claude/agents && python3 gamification/scripts/squad-demo.py
+cd ~/.claude/agents && python3 gamification/scripts/agents-demo.py
 ```
 
 Watch agents level up, earn achievements like "Speed Demon" and "Bug Hunter", and see real-time mission progress.
@@ -46,7 +46,7 @@ Watch agents level up, earn achievements like "Speed Demon" and "Bug Hunter", an
 
 ## 🔍 Agent Discovery & Coordination System
 
-The Elite Squad now features an advanced **AgentRegistry** that automatically discovers and coordinates agents from multiple locations:
+The SubAgents system now features an advanced **AgentRegistry** that automatically discovers and coordinates agents from multiple locations:
 
 ### Live Demo - See It In Action!
 
@@ -72,13 +72,13 @@ The Elite Squad now features an advanced **AgentRegistry** that automatically di
   Business            │████                │  2 agents
   Security            │██                  │  1 agents
 
-🎯 FEATURE PLANNING & SQUAD RECOMMENDATION
+🎯 FEATURE PLANNING & TEAM RECOMMENDATION
 ────────────────────────────────────────
 
   ▸ Building E-Commerce Web Application
   📝 Tech Stack: ["react", "typescript", "python", "postgresql"]
   
-  ✓ Recommended Squad (6 agents):
+  ✓ Recommended Team (6 agents):
   • full-stack-architect - Complete system architecture design
   • python-elite - Python/Django/FastAPI development
   • frontend-developer - Modern UI components and frameworks
@@ -101,7 +101,7 @@ python3 test_agent_registry.py
 
 - **Unified Discovery**: Finds agents from `/agents/`, `~/.claude/agents/`, and `.claude/agents/`
 - **Built-in Orchestration**: Claude Code handles agent coordination automatically
-- **Squad Formation**: Intelligently recommends 3-6 agents based on your project needs
+- **Team Formation**: Intelligently recommends 3-6 agents based on your project needs
 - **No External Dependencies**: Works with built-in Python libraries only
 
 <details>
@@ -173,9 +173,9 @@ python3 test_agent_registry.py
 
 ### XP Tracking
 ```bash
-./squad                    # View all agent levels
-./squad python-pro         # Check specific agent  
-./squad log python-pro "Built API"  # Manual XP logging
+./agents                    # View all agent levels
+./agents python-pro         # Check specific agent  
+./agents log python-pro "Built API"  # Manual XP logging
 ```
 
 </details>
@@ -202,19 +202,19 @@ The **Agent Registry System** automatically discovers and coordinates all availa
 - ✅ Tech stack analysis and matching
 - ✅ Performance-based recommendations
 - ✅ XP tracking integration
-- ✅ Smart squad formation
+- ✅ Smart team formation
 
 </details>
 
 ## 📊 SubAgents Analytics System
 
-Experience the power of data-driven AI development with our comprehensive analytics system. Track agent performance, monitor squad effectiveness, and optimize your development workflow with beautiful visualizations.
+Experience the power of data-driven AI development with our comprehensive analytics system. Track agent performance, monitor team effectiveness, and optimize your development workflow with beautiful visualizations.
 
 ### 🏆 XP Leaderboard - See Your Champions Rise
 
 ```ansi
 ╔══════════════════════════════════════════════════════════════════════╗
-║                         🏆 ELITE SQUAD LEADERBOARD 🏆                ║
+║                           🏆 AGENT LEADERBOARD 🏆                    ║
 ╠══════════════════════════════════════════════════════════════════════╣
 ║                                                                      ║
 ║  🥇 #1  python-pro              ████████████████████ 💎 Legend       ║
@@ -240,14 +240,14 @@ Experience the power of data-driven AI development with our comprehensive analyt
 ╚══════════════════════════════════════════════════════════════════════╝
 ```
 
-### 🎯 Squad Formation Analysis - Perfect Team Chemistry
+### 🎯 Team Formation Analysis - Perfect Team Chemistry
 
 ```ansi
 ╔══════════════════════════════════════════════════════════════════════╗
-║                      🎯 SQUAD FORMATION INSIGHTS                     ║
+║                      🎯 TEAM FORMATION INSIGHTS                      ║
 ╠══════════════════════════════════════════════════════════════════════╣
 ║                                                                      ║
-║  🚀 MOST EFFECTIVE SQUAD COMBINATIONS                               ║
+║  🚀 MOST EFFECTIVE TEAM COMBINATIONS                                ║
 ║  ────────────────────────────────────────────────────────────────   ║
 ║                                                                      ║
 ║  1. "Full-Stack Dream Team" (Success Rate: 94%)                     ║
@@ -255,7 +255,7 @@ Experience the power of data-driven AI development with our comprehensive analyt
 ║     💡 Synergy Bonus: +25% XP when working together                 ║
 ║     📈 Avg Completion Time: 23% faster than individual work         ║
 ║                                                                      ║
-║  2. "Security & Performance Squad" (Success Rate: 91%)              ║
+║  2. "Security & Performance Team" (Success Rate: 91%)               ║
 ║     🔒 security-auditor → ⚡ performance-engineer → 🛠️ devops-engineer║
 ║     💡 Synergy Bonus: +30% XP for critical infrastructure tasks     ║
 ║     🎯 Speciality: Zero-downtime deployments with security audits   ║
@@ -263,13 +263,13 @@ Experience the power of data-driven AI development with our comprehensive analyt
 ║  3. "Data Intelligence Unit" (Success Rate: 88%)                    ║
 ║     📊 data-engineer → 🤖 ai-engineer → 🧪 ml-engineer              ║
 ║     💡 Synergy Bonus: +35% XP for ML/AI pipeline tasks             ║
-║     🚀 Achievement Unlock: "Data Wizards" squad achievement         ║
+║     🚀 Achievement Unlock: "Data Wizards" team achievement          ║
 ║                                                                      ║
 ║  📊 FORMATION STATS THIS MONTH                                      ║
-║  • Total Squads Formed: 47                                          ║
-║  • Average Squad Size: 3.2 agents                                   ║
+║  • Total Teams Formed: 47                                           ║
+║  • Average Team Size: 3.2 agents                                    ║
 ║  • Most Popular Agent: python-pro (32 formations)                   ║
-║  • Highest XP Squad: "Backend Legends" (1,247 XP earned)           ║
+║  • Highest XP Team: "Backend Legends" (1,247 XP earned)             ║
 ║                                                                      ║
 ╚══════════════════════════════════════════════════════════════════════╝
 ```
@@ -312,45 +312,45 @@ Experience the power of data-driven AI development with our comprehensive analyt
 ╚══════════════════════════════════════════════════════════════════════╝
 ```
 
-### 💻 Analytics Commands - Unlock Your Squad's Potential
+### 💻 Analytics Commands - Unlock Your Team's Potential
 
-Master these commands to get the most out of your Elite Squad analytics:
+Master these commands to get the most out of your SubAgents analytics:
 
 ```bash
 # 🏆 LEADERBOARD & RANKINGS
-./squad leaderboard                    # View full XP leaderboard
-./squad top 10                        # Show top 10 agents
-./squad levels                         # Display all agent levels
-./squad achievements                   # Show recent achievements
+./agents leaderboard                    # View full XP leaderboard
+./agents top 10                        # Show top 10 agents
+./agents levels                         # Display all agent levels
+./agents achievements                   # Show recent achievements
 
 # 📊 DETAILED AGENT ANALYTICS  
-./squad stats python-pro              # Individual agent performance
-./squad history devops-troubleshooter # Task completion history
-./squad efficiency frontend-developer # Performance metrics & trends
+./agents stats python-pro              # Individual agent performance
+./agents history devops-troubleshooter # Task completion history
+./agents efficiency frontend-developer # Performance metrics & trends
 
-# 🎯 SQUAD FORMATION INSIGHTS
-./squad formations                     # Most effective team combinations
-./squad synergy                       # Current squad synergy bonuses
-./squad recommend "web app project"   # Get squad recommendations
-./squad chemistry                     # Analyze team compatibility
+# 🎯 TEAM FORMATION INSIGHTS
+./agents formations                     # Most effective team combinations
+./agents synergy                       # Current team synergy bonuses
+./agents recommend "web app project"   # Get team recommendations
+./agents chemistry                     # Analyze team compatibility
 
 # 📈 USAGE & PRODUCTIVITY INSIGHTS
-./squad insights                      # Personal usage patterns
-./squad trends                        # 30-day productivity trends
-./squad peak-hours                    # Your most productive times
-./squad categories                    # Task breakdown analysis
+./agents insights                      # Personal usage patterns
+./agents trends                        # 30-day productivity trends
+./agents peak-hours                    # Your most productive times
+./agents categories                    # Task breakdown analysis
 
 # 🎮 GAMIFICATION FEATURES
-./squad xp-log "Built REST API" 150  # Manually log XP for custom tasks
-./squad missions                      # View available achievements
-./squad progress "Bug Hunter"        # Track specific achievement progress
-./squad celebrate                    # View recent accomplishments
+./agents xp-log "Built REST API" 150  # Manually log XP for custom tasks
+./agents missions                      # View available achievements
+./agents progress "Bug Hunter"        # Track specific achievement progress
+./agents celebrate                    # View recent accomplishments
 
 # 📊 EXPORT & REPORTING
-./squad export-stats                  # Export analytics to CSV
-./squad weekly-report                 # Generate weekly summary
-./squad compare-agents                # Side-by-side agent comparison
-./squad project-dna "my-project"     # Analyze project requirements
+./agents export-stats                  # Export analytics to CSV
+./agents weekly-report                 # Generate weekly summary
+./agents compare-agents                # Side-by-side agent comparison
+./agents project-dna "my-project"     # Analyze project requirements
 ```
 
 ### 🎨 Real-Time Mission Tracking
@@ -362,14 +362,14 @@ Watch your agents collaborate in real-time with beautiful progress visualization
 ║                    🚀 MISSION IN PROGRESS: "API Optimization"        ║
 ╠══════════════════════════════════════════════════════════════════════╣
 ║                                                                      ║
-║  👥 ACTIVE SQUAD: Performance Dream Team                            ║
+║  👥 ACTIVE TEAM: Performance Dream Team                             ║
 ║  • ⚡ performance-engineer    [████████████████████] 100% Complete   ║
 ║  • 🐍 python-pro             [███████████████████▒] 95% Complete    ║
 ║  • 📊 database-optimizer     [████████████████▒▒▒▒] 80% Complete    ║
 ║                                                                      ║
 ║  📈 REAL-TIME METRICS                                               ║
 ║  ────────────────────                                               ║
-║  Mission XP Earned: 1,247 XP (+25% squad synergy bonus)            ║
+║  Mission XP Earned: 1,247 XP (+25% team synergy bonus)             ║
 ║  Estimated Completion: 12 minutes                                   ║
 ║  Current Efficiency: 127% (above average)                           ║
 ║                                                                      ║
@@ -388,13 +388,13 @@ Watch your agents collaborate in real-time with beautiful progress visualization
 
 ### 🎯 Getting Started with Analytics
 
-1. **View Your Leaderboard**: `./squad leaderboard` - See which agents are leading the pack
-2. **Check Squad Chemistry**: `./squad formations` - Discover your most effective team combinations  
-3. **Analyze Your Patterns**: `./squad insights` - Understand your development workflow
-4. **Track Achievements**: `./squad achievements` - Monitor progress toward unlocking new badges
-5. **Export Data**: `./squad export-stats` - Get detailed analytics for reporting
+1. **View Your Leaderboard**: `./agents leaderboard` - See which agents are leading the pack
+2. **Check Team Chemistry**: `./agents formations` - Discover your most effective team combinations  
+3. **Analyze Your Patterns**: `./agents insights` - Understand your development workflow
+4. **Track Achievements**: `./agents achievements` - Monitor progress toward unlocking new badges
+5. **Export Data**: `./agents export-stats` - Get detailed analytics for reporting
 
-**Pro Tip**: Use `./squad recommend "your project description"` to get AI-powered squad suggestions based on your specific needs and historical performance data.
+**Pro Tip**: Use `./agents recommend "your project description"` to get AI-powered team suggestions based on your specific needs and historical performance data.
 
 <details>
 <summary><strong>🚀 Installation Options</strong></summary>
@@ -511,7 +511,7 @@ cp -r claude-code-subagents/agents/* ~/.claude/agents/
 
 > "Cut our development time by 70% on a major refactoring project" - *Tech Lead*
 
-| Feature | Other Collections | Elite Squad |
+| Feature | Other Collections | SubAgents |
 |---------|------------------|-------------|
 | Basic Agents | ✅ Yes | ✅ 31 Specialists |
 | **Gamification** | ❌ No | ✅ **Full XP System** |
@@ -521,7 +521,7 @@ cp -r claude-code-subagents/agents/* ~/.claude/agents/
 ## Get Started
 
 1. **Install**: `cd ~/.claude && git clone https://github.com/mylee04/claude-code-subagents.git agents`
-2. **Try the demo**: `python3 gamification/scripts/squad-demo.py`
+2. **Try the demo**: `python3 gamification/scripts/agents-demo.py`
 3. **Plan a feature**: "Build user authentication system"
 4. **Use specific agents**: `/python-pro optimize this function`
 

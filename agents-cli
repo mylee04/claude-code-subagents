@@ -1,0 +1,16 @@
+#!/bin/bash
+
+# Main Agents Command - Entry point for the gamification system
+# This script should be in the root directory for easy access
+
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+GAMIFICATION_DIR="$SCRIPT_DIR/gamification"
+
+# Forward to the appropriate script
+if [ -f "$GAMIFICATION_DIR/scripts/agents-query.sh" ]; then
+    "$GAMIFICATION_DIR/scripts/agents-query.sh" "$@"
+else
+    echo "Error: Agents gamification system not found!"
+    echo "Please ensure the gamification folder exists in: $SCRIPT_DIR"
+    exit 1
+fi

@@ -1,0 +1,192 @@
+{
+  "agents": {
+    "database-optimizer": {
+      "level": 1,
+      "xp": 80,
+      "total_calls": 2,
+      "successful_tasks": 2,
+      "failed_tasks": 0,
+      "errors_resolved": 0,
+      "avg_task_time": 0,
+      "specialties": [],
+      "achievements": [
+        "first-blood"
+      ],
+      "last_used": "2025-07-31T10:16:14.645147"
+    },
+    "performance-engineer": {
+      "level": 1,
+      "xp": 65,
+      "total_calls": 1,
+      "successful_tasks": 1,
+      "failed_tasks": 0,
+      "errors_resolved": 0,
+      "avg_task_time": 0,
+      "specialties": [],
+      "achievements": [
+        "first-blood"
+      ],
+      "last_used": "2025-07-31T10:16:16.720144"
+    },
+    "backend-architect": {
+      "level": 1,
+      "xp": 75,
+      "total_calls": 1,
+      "successful_tasks": 1,
+      "failed_tasks": 0,
+      "errors_resolved": 0,
+      "avg_task_time": 0,
+      "specialties": [],
+      "achievements": [
+        "first-blood"
+      ],
+      "last_used": "2025-07-31T10:16:49.050555"
+    },
+    "security-auditor": {
+      "level": 1,
+      "xp": 65,
+      "total_calls": 1,
+      "successful_tasks": 1,
+      "failed_tasks": 0,
+      "errors_resolved": 0,
+      "avg_task_time": 0,
+      "specialties": [],
+      "achievements": [
+        "first-blood"
+      ],
+      "last_used": "2025-07-31T10:16:53.121889"
+    },
+    "frontend-developer": {
+      "level": 1,
+      "xp": 20,
+      "total_calls": 1,
+      "successful_tasks": 0,
+      "failed_tasks": 1,
+      "errors_resolved": 1,
+      "avg_task_time": 0,
+      "specialties": [],
+      "achievements": [],
+      "last_used": "2025-07-31T10:16:59.205918"
+    },
+    "test-engineer": {
+      "level": 1,
+      "xp": 65,
+      "total_calls": 1,
+      "successful_tasks": 1,
+      "failed_tasks": 0,
+      "errors_resolved": 0,
+      "avg_task_time": 0,
+      "specialties": [],
+      "achievements": [
+        "first-blood"
+      ],
+      "last_used": "2025-07-31T10:17:01.285985"
+    }
+  },
+  "missions": [
+    {
+      "id": 1,
+      "agent": "database-optimizer",
+      "task": "Analyzing slow queries",
+      "success": true,
+      "xp_gained": 15,
+      "duration": 2,
+      "timestamp": "2025-07-31T10:16:11.558466",
+      "error": null
+    },
+    {
+      "id": 2,
+      "agent": "database-optimizer",
+      "task": "Creating optimized indexes",
+      "success": true,
+      "xp_gained": 15,
+      "duration": 3,
+      "timestamp": "2025-07-31T10:16:14.645165",
+      "error": null
+    },
+    {
+      "id": 3,
+      "agent": "performance-engineer",
+      "task": "Profiling application performance",
+      "success": true,
+      "xp_gained": 15,
+      "duration": 2,
+      "timestamp": "2025-07-31T10:16:16.720158",
+      "error": null
+    },
+    {
+      "id": 4,
+      "agent": "backend-architect",
+      "task": "Designing WebSocket architecture",
+      "success": true,
+      "xp_gained": 25,
+      "duration": 3,
+      "timestamp": "2025-07-31T10:16:49.050568",
+      "error": null
+    },
+    {
+      "id": 5,
+      "agent": "security-auditor",
+      "task": "Implementing authentication",
+      "success": true,
+      "xp_gained": 15,
+      "duration": 4,
+      "timestamp": "2025-07-31T10:16:53.121912",
+      "error": null
+    },
+    {
+      "id": 6,
+      "agent": "frontend-developer",
+      "task": "Building chat components",
+      "success": false,
+      "xp_gained": 20,
+      "duration": 5,
+      "timestamp": "2025-07-31T10:16:59.205933",
+      "error": "Error resolved: Type mismatch in API response"
+    },
+    {
+      "id": 7,
+      "agent": "test-engineer",
+      "task": "Writing integration tests",
+      "success": true,
+      "xp_gained": 15,
+      "duration": 2,
+      "timestamp": "2025-07-31T10:17:01.286018",
+      "error": null
+    }
+  ],
+  "achievements_unlocked": [
+    {
+      "agent": "database-optimizer",
+      "achievement": "first-blood",
+      "timestamp": "2025-07-31T10:16:11.558593"
+    },
+    {
+      "agent": "performance-engineer",
+      "achievement": "first-blood",
+      "timestamp": "2025-07-31T10:16:16.720167"
+    },
+    {
+      "agent": "backend-architect",
+      "achievement": "first-blood",
+      "timestamp": "2025-07-31T10:16:49.050578"
+    },
+    {
+      "agent": "security-auditor",
+      "achievement": "first-blood",
+      "timestamp": "2025-07-31T10:16:53.121927"
+    },
+    {
+      "agent": "test-engineer",
+      "achievement": "first-blood",
+      "timestamp": "2025-07-31T10:17:01.286054"
+    }
+  ],
+  "total_xp": 370,
+  "stats": {
+    "total_missions": 7,
+    "success_rate": 85.71428571428571,
+    "avg_completion_time": 3.0
+  },
+  "last_updated": "2025-07-31T10:17:01.286148"
+}

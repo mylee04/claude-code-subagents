@@ -8,6 +8,27 @@ show_downloads: true
 github:
   repository_name: claude-code-subagents
   repository_url: https://github.com/mylee04/claude-code-subagents
+  topics:
+    - automation
+    - ai
+    - agents
+    - ai-agents
+    - claude
+    - anthropic
+    - claude-code
+    - claudecode
+    - subagents
+    - sub-agents
+    - claude-code-subagents
+    - claudecode-subagents
+    - llm
+    - ai-development
+    - developer-tools
+    - productivity
+    - code-assistant
+    - ai-assistant
+    - devops
+    - software-engineering
 
 # Navigation
 navigation:

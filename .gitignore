@@ -78,3 +78,8 @@ build/
 # Misc
 .cache/
 .history/
+
+# Project-specific files (security)
+claude.md
+CLAUDE.md
+.claude/agents/

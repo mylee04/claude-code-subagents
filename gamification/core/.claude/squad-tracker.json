@@ -1,0 +1,194 @@
+{
+  "agents": {
+    "elite-squad-analytics-agent": {
+      "level": 4,
+      "xp": 1125,
+      "total_calls": 1,
+      "successful_tasks": 1,
+      "failed_tasks": 0,
+      "errors_resolved": 0,
+      "avg_task_time": 0,
+      "specialties": [],
+      "achievements": [
+        "first-blood"
+      ],
+      "last_used": "2025-07-31T13:46:28.701853",
+      "daily_streak": 1,
+      "last_login_date": "2025-07-31"
+    },
+    "backend-architect": {
+      "level": 7,
+      "xp": 3475,
+      "total_calls": 3,
+      "successful_tasks": 3,
+      "failed_tasks": 0,
+      "errors_resolved": 0,
+      "avg_task_time": 0,
+      "specialties": [],
+      "achievements": [
+        "first-blood",
+        "elite"
+      ],
+      "last_used": "2025-07-31T16:53:23.541875",
+      "daily_streak": 1,
+      "last_login_date": "2025-07-31"
+    },
+    "test-agent": {
+      "level": 2,
+      "xp": 540,
+      "total_calls": 1,
+      "successful_tasks": 1,
+      "failed_tasks": 0,
+      "errors_resolved": 0,
+      "avg_task_time": 0,
+      "specialties": [],
+      "achievements": [
+        "first-blood"
+      ],
+      "last_used": "2025-07-31T16:53:23.527864",
+      "daily_streak": 1,
+      "last_login_date": "2025-07-31"
+    }
+  },
+  "missions": [
+    {
+      "id": 1,
+      "agent": "elite-squad-analytics-agent",
+      "task": "redesign XP system architecture",
+      "success": true,
+      "xp_gained": 1075,
+      "xp_breakdown": {
+        "tasks": 500,
+        "performance_bonus": {
+          "multiplier": 1.9500000000000002,
+          "bonus_xp": 475,
+          "reasons": [
+            "Flawless Execution",
+            "First Try Success"
+          ]
+        },
+        "engagement": 100
+      },
+      "duration": 0,
+      "timestamp": "2025-07-31T13:46:28.702626",
+      "error": null
+    },
+    {
+      "id": 2,
+      "agent": "backend-architect",
+      "task": "Design RESTful API architecture and endpoints",
+      "success": true,
+      "xp_gained": 1075,
+      "xp_breakdown": {
+        "tasks": 500,
+        "performance_bonus": {
+          "multiplier": 1.9500000000000002,
+          "bonus_xp": 475,
+          "reasons": [
+            "Flawless Execution",
+            "First Try Success"
+          ]
+        },
+        "engagement": 100
+      },
+      "duration": 1800,
+      "timestamp": "2025-07-31T16:53:21.820377",
+      "error": null
+    },
+    {
+      "id": 3,
+      "agent": "backend-architect",
+      "task": "Design system architecture and component structure",
+      "success": true,
+      "xp_gained": 1075,
+      "xp_breakdown": {
+        "tasks": 500,
+        "performance_bonus": {
+          "multiplier": 1.9500000000000002,
+          "bonus_xp": 475,
+          "reasons": [
+            "Flawless Execution",
+            "First Try Success"
+          ]
+        },
+        "engagement": 100
+      },
+      "duration": 900,
+      "timestamp": "2025-07-31T16:53:21.911308",
+      "error": null
+    },
+    {
+      "id": 4,
+      "agent": "test-agent",
+      "task": "test task",
+      "success": true,
+      "xp_gained": 490,
+      "xp_breakdown": {
+        "tasks": 200,
+        "performance_bonus": {
+          "multiplier": 1.9500000000000002,
+          "bonus_xp": 190,
+          "reasons": [
+            "Flawless Execution",
+            "First Try Success"
+          ]
+        },
+        "engagement": 100
+      },
+      "duration": 0,
+      "timestamp": "2025-07-31T16:53:23.527917",
+      "error": null
+    },
+    {
+      "id": 5,
+      "agent": "backend-architect",
+      "task": "Design system architecture and component structure",
+      "success": true,
+      "xp_gained": 1075,
+      "xp_breakdown": {
+        "tasks": 500,
+        "performance_bonus": {
+          "multiplier": 1.9500000000000002,
+          "bonus_xp": 475,
+          "reasons": [
+            "Flawless Execution",
+            "First Try Success"
+          ]
+        },
+        "engagement": 100
+      },
+      "duration": 1200,
+      "timestamp": "2025-07-31T16:53:23.541918",
+      "error": null
+    }
+  ],
+  "achievements_unlocked": [
+    {
+      "agent": "elite-squad-analytics-agent",
+      "achievement": "first-blood",
+      "timestamp": "2025-07-31T13:46:28.702630"
+    },
+    {
+      "agent": "backend-architect",
+      "achievement": "first-blood",
+      "timestamp": "2025-07-31T16:53:21.820384"
+    },
+    {
+      "agent": "backend-architect",
+      "achievement": "elite",
+      "timestamp": "2025-07-31T16:53:21.911313"
+    },
+    {
+      "agent": "test-agent",
+      "achievement": "first-blood",
+      "timestamp": "2025-07-31T16:53:23.527921"
+    }
+  ],
+  "total_xp": 5140,
+  "stats": {
+    "total_missions": 5,
+    "success_rate": 100.0,
+    "avg_completion_time": 1300.0
+  },
+  "last_updated": "2025-07-31T16:53:23.541923"
+}

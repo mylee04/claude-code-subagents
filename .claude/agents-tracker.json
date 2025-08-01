@@ -1,0 +1,102 @@
+{
+  "agents": {
+    "python-elite": {
+      "level": 1,
+      "xp": 65,
+      "total_calls": 1,
+      "successful_tasks": 1,
+      "failed_tasks": 0,
+      "errors_resolved": 0,
+      "avg_task_time": 0,
+      "specialties": [],
+      "achievements": [
+        "first-blood"
+      ],
+      "last_used": "2025-07-31T10:23:51.513628"
+    },
+    "devops-troubleshooter": {
+      "level": 1,
+      "xp": 65,
+      "total_calls": 1,
+      "successful_tasks": 1,
+      "failed_tasks": 0,
+      "errors_resolved": 0,
+      "avg_task_time": 0,
+      "specialties": [],
+      "achievements": [
+        "first-blood"
+      ],
+      "last_used": "2025-07-31T10:23:51.554095"
+    },
+    "data-ai-ml-engineer": {
+      "level": 1,
+      "xp": 65,
+      "total_calls": 1,
+      "successful_tasks": 1,
+      "failed_tasks": 0,
+      "errors_resolved": 0,
+      "avg_task_time": 0,
+      "specialties": [],
+      "achievements": [
+        "first-blood"
+      ],
+      "last_used": "2025-07-31T10:29:44.142282"
+    }
+  },
+  "missions": [
+    {
+      "id": 1,
+      "agent": "python-elite",
+      "task": "Command execution",
+      "success": true,
+      "xp_gained": 15,
+      "duration": 0,
+      "timestamp": "2025-07-31T10:23:51.513631",
+      "error": null
+    },
+    {
+      "id": 2,
+      "agent": "devops-troubleshooter",
+      "task": "Natural language task",
+      "success": true,
+      "xp_gained": 15,
+      "duration": 0,
+      "timestamp": "2025-07-31T10:23:51.554103",
+      "error": null
+    },
+    {
+      "id": 3,
+      "agent": "data-ai-ml-engineer",
+      "task": "Built ML pipeline",
+      "success": true,
+      "xp_gained": 15,
+      "duration": 0,
+      "timestamp": "2025-07-31T10:29:44.142287",
+      "error": null
+    }
+  ],
+  "achievements_unlocked": [
+    {
+      "agent": "python-elite",
+      "achievement": "first-blood",
+      "timestamp": "2025-07-31T10:23:51.513633"
+    },
+    {
+      "agent": "devops-troubleshooter",
+      "achievement": "first-blood",
+      "timestamp": "2025-07-31T10:23:51.554110"
+    },
+    {
+      "agent": "data-ai-ml-engineer",
+      "achievement": "first-blood",
+      "timestamp": "2025-07-31T10:29:44.142290"
+    }
+  ],
+  "total_xp": 195,
+  "stats": {
+    "total_missions": 3,
+    "success_rate": 100.0,
+    "avg_completion_time": 0
+  },
+  "last_updated": "2025-07-31T10:29:44.142297"
+}

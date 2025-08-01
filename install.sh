@@ -54,9 +54,24 @@ for category_dir in "$CLAUDE_AGENTS_DIR"/*; do
     fi
 done
 
+# Install gamification system
+echo "🎮 Installing SubAgents Gamification System..."
+if [ -d "gamification" ]; then
+    # Make scripts executable
+    chmod +x gamification/scripts/*.sh
+    chmod +x gamification/core/*.py
+    chmod +x agents-cli
+    echo "✅ Gamification system ready!"
+    echo ""
+fi
+
 echo "🎯 Next steps:"
-echo "   1. Create a claude.md file in your project"
-echo "   2. Run: /agent-assembler"
-echo "   3. Use your custom agents with slash commands!"
+echo "   1. Try the demo: python3 gamification/scripts/agents-demo.py"
+echo "   2. Check agent levels: ./agents-cli"
+echo "   3. Create a claude.md file and run: /agent-generator"
+echo "   4. Use agents and track XP: ./agents-cli log [agent] [task]"
 echo ""
-echo "🚀 Happy coding with your AI development team!"
+echo "💡 Pro tip: Add this alias to your shell:"
+echo "   alias agents='$(pwd)/agents-cli'"
+echo ""
+echo "🚀 Happy coding with your Elite AI Development Squad!"
